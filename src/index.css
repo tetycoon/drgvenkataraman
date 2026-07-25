@@ -144,6 +144,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 90px;
+  gap: 48px;
 }
 
 .brand-logo {
