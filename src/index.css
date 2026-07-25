@@ -190,6 +190,21 @@ body {
   list-style: none;
 }
 
+.nav-links li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-links li:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 16px;
+  background-color: #CBD5E1;
+  flex-shrink: 0;
+}
+
 .nav-link {
   color: #475569;
   text-decoration: none;
