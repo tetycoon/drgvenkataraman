@@ -23,7 +23,8 @@ import {
   Send,
   Camera,
   Maximize2,
-  Eye
+  Eye,
+  Menu
 } from 'lucide-react';
 
 import drPortrait from './assets/images/Dr-G-Venkatraman.jpg';
@@ -39,6 +40,7 @@ export default function App() {
   const [selectedDay, setSelectedDay] = useState('Monday');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isCallMenuOpen, setIsCallMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
   // Clinical Photo Gallery State
@@ -312,7 +314,7 @@ export default function App() {
             </div>
           </a>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+          <div className="nav-actions-container" style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
             <ul className="nav-links" style={{ margin: 0 }}>
               <li><a href="#about" className="nav-link">About</a></li>
               <li><a href="#locations" className="nav-link">Locations</a></li>
@@ -325,7 +327,7 @@ export default function App() {
 
             <div className="call-dropdown-container" style={{ position: 'relative' }} onMouseLeave={() => setIsCallMenuOpen(false)}>
               <button className="btn btn-primary" onClick={() => setIsCallMenuOpen(!isCallMenuOpen)} style={{ whiteSpace: 'nowrap' }}>
-                <Phone size={18} /> Direct Call <ChevronDown size={16} />
+                <Phone size={18} /> <span className="hide-mobile">Direct Call</span> <ChevronDown size={16} />
               </button>
               {isCallMenuOpen && (
                 <div className="call-dropdown-menu">
@@ -340,7 +342,24 @@ export default function App() {
                 </div>
               )}
             </div>
+
+            <button className="mobile-menu-btn" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
+        </div>
+
+        {isMobileMenuOpen && (
+          <div className="mobile-nav-menu">
+            <a href="#about" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>About</a>
+            <a href="#locations" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Locations</a>
+            <a href="#schedule" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>OP Schedule</a>
+            <a href="#procedures" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Procedures</a>
+            <a href="#gallery" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Clinical Gallery</a>
+            <a href="#prep" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>Scopy Prep</a>
+            <a href="#research" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>NAFLD Research</a>
+          </div>
+        )}
         </div>
       </nav>
 
