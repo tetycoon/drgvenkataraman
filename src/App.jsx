@@ -360,7 +360,6 @@ export default function App() {
             <a href="#research" className="mobile-nav-link" onClick={() => setIsMobileMenuOpen(false)}>NAFLD Research</a>
           </div>
         )}
-        </div>
       </nav>
 
       {/* Hero Section */}
