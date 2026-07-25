@@ -290,10 +290,6 @@ export default function App() {
       {/* Top Emergency & Announcement Header */}
       <div className="top-bar">
         <div className="container top-bar-content">
-          <div className="status-badge">
-            <span className="status-dot"></span>
-            <span>Live Schedule Today: Trichy & Pudukkottai Open</span>
-          </div>
           <div className="top-contacts">
             <span>Direct Helplines:</span>
             <a href="tel:04314077777" className="top-contact-link">Trichy: 0431-4077777</a>
