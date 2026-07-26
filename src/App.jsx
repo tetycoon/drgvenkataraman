@@ -1046,11 +1046,28 @@ export default function App() {
       </footer>
 
       {/* Mobile Sticky Bar */}
-      <div className="mobile-sticky-bar">
-        <a href="tel:04314077777" className="btn btn-outline-blue" style={{ flex: 1, padding: '10px' }}>
+      <div 
+        className="mobile-sticky-bar"
+        style={{
+          position: 'fixed',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          width: '100%',
+          backgroundColor: '#ffffff',
+          padding: '12px 16px',
+          boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.25)',
+          zIndex: 999999,
+          display: 'flex',
+          justifyContent: 'space-between',
+          gap: '12px',
+          borderTop: '1px solid #e2e8f0'
+        }}
+      >
+        <a href="tel:04314077777" className="btn btn-outline-blue" style={{ flex: 1, padding: '10px 8px', fontSize: '0.85rem', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }}>
           <Phone size={16} /> Call Trichy
         </a>
-        <button className="btn btn-primary" style={{ flex: 1, padding: '10px' }} onClick={() => setIsModalOpen(true)}>
+        <button className="btn btn-primary" style={{ flex: 1, padding: '10px 8px', fontSize: '0.85rem', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }} onClick={() => setIsModalOpen(true)}>
           <Calendar size={16} /> Book Appt
         </button>
       </div>
