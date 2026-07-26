@@ -371,7 +371,7 @@ export default function App() {
                 <HeartPulse size={16} /> Advanced Diagnostics & Therapeutics
               </div>
               
-              <h1 className="hero-title">Expert Gastroenterology & Liver Care</h1>
+              <h1 className="hero-title">Expert Gastroenterologist in Trichy & Pudukkottai</h1>
               <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '28px' }}>
                 <img src={drPortrait} alt="Dr. G. Venkatraman" style={{ width: '120px', height: '120px', borderRadius: '16px', objectFit: 'cover', border: '4px solid var(--primary-light)', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
                 <div className="hero-degrees" style={{ margin: 0, fontSize: '1.25rem' }}>Led by Dr. G. Venkatraman, MD, DM</div>
