@@ -310,7 +310,7 @@ export default function App() {
             </div>
             <div>
               <div className="brand-name">Dr. G. Venkatraman</div>
-              <div className="brand-subtitle">MD, DM (Gastroenterology & Hepatology)</div>
+              <div className="brand-subtitle">Kauvery Hospital (Trichy) & Team Speciality (Pudukkottai)</div>
             </div>
           </a>
 
