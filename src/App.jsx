@@ -1044,6 +1044,16 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Mobile Sticky Bar */}
+      <div className="mobile-sticky-bar">
+        <a href="tel:04314077777" className="btn btn-outline-blue" style={{ flex: 1, padding: '10px' }}>
+          <Phone size={16} /> Call Trichy
+        </a>
+        <button className="btn btn-primary" style={{ flex: 1, padding: '10px' }} onClick={() => setIsModalOpen(true)}>
+          <Calendar size={16} /> Book Appt
+        </button>
+      </div>
     </div>
   );
 }
