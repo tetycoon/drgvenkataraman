@@ -1473,13 +1473,13 @@ body {
   }
   
   .brand-name {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     white-space: normal;
     line-height: 1.1;
   }
 
   .brand-subtitle {
-    font-size: 0.45rem;
+    font-size: 0.4rem;
     white-space: normal;
   }
 }
@@ -1487,7 +1487,7 @@ body {
 @media (max-width: 480px) {
   .top-contacts {
     gap: 8px;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     flex-wrap: wrap;
     justify-content: center;
   }
