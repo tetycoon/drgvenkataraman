@@ -1446,6 +1446,10 @@ body {
     display: none;
   }
   
+  .nav-links {
+    display: none;
+  }
+  
   .navbar {
     position: relative;
   }
@@ -1470,10 +1474,24 @@ body {
   
   .brand-name {
     font-size: 1.1rem;
+    white-space: normal;
+    line-height: 1.1;
+  }
+
+  .brand-subtitle {
+    font-size: 0.45rem;
+    white-space: normal;
   }
 }
 
 @media (max-width: 480px) {
+  .top-contacts {
+    gap: 8px;
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .day-btn {
     flex: 1 1 calc(50% - 8px);
   }
