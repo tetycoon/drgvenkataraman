@@ -1135,8 +1135,41 @@ body {
 }
 
 @media (max-width: 640px) {
+  .hero-section {
+    padding: 28px 0;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+
+  .hero-degrees {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  .section {
+    padding: 36px 0;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .section-header {
+    margin-bottom: 24px;
   }
 
   .form-row, .radio-tiles-group {
@@ -1431,7 +1464,13 @@ body {
 
 @media (max-width: 992px) {
   .nav-container {
-    gap: 16px;
+    gap: 12px;
+    height: 64px;
+  }
+
+  .logo-icon-bg {
+    width: 36px;
+    height: 36px;
   }
   
   .mobile-menu-btn {
@@ -1473,13 +1512,13 @@ body {
   }
   
   .brand-name {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     white-space: normal;
     line-height: 1.1;
   }
 
   .brand-subtitle {
-    font-size: 0.4rem;
+    font-size: 0.38rem;
     white-space: normal;
   }
 }
