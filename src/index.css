@@ -1504,29 +1504,30 @@ body {
 
 /* Mobile Sticky Bottom CTA Bar */
 .mobile-sticky-bar {
-  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
   padding: 10px 16px;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
   z-index: 999999 !important;
   border-top: 1px solid var(--border-color);
+  display: flex !important;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-@media (max-width: 992px) {
+.mobile-sticky-bar .btn {
+  flex: 1;
+  font-size: 0.9rem;
+  padding: 12px 8px;
+}
+
+@media (min-width: 769px) {
   .mobile-sticky-bar {
-    display: flex !important;
-    justify-content: space-between;
-    gap: 12px;
-  }
-  .mobile-sticky-bar .btn {
-    flex: 1;
-    font-size: 0.9rem;
-    padding: 12px 8px;
+    display: none !important;
   }
 }
 
