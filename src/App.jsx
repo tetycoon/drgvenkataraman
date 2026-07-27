@@ -376,14 +376,14 @@ export default function App() {
                 இரைப்பை, குடல், கல்லீரல் மற்றும் கணைய நோய் சிறப்பு மருத்துவர்
               </div>
               
-              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '24px' }}>
-                <img src={drPortrait} alt="Dr. G. Venkatraman" style={{ width: '100px', height: '100px', borderRadius: '16px', objectFit: 'cover', border: '3px solid var(--primary-light)', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
+              <div className="hero-doctor-card">
+                <img src={drPortrait} alt="Dr. G. Venkatraman" className="hero-doctor-avatar" />
                 <div>
-                  <div className="hero-degrees" style={{ margin: 0, fontSize: '1.2rem', fontWeight: '800' }}>Dr. G. Venkatraman, MD, DM</div>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: '600', marginTop: '4px' }}>
+                  <div className="hero-doctor-name" style={{ fontSize: '1.15rem', fontWeight: '800', color: '#0F172A', lineHeight: 1.2 }}>Dr. G. Venkatraman, MD, DM</div>
+                  <div className="hero-doctor-title" style={{ fontSize: '0.82rem', color: 'var(--text-muted)', fontWeight: '600', marginTop: '2px' }}>
                     Consultant Gastroenterologist and Hepatologist
                   </div>
-                  <div style={{ fontSize: '0.78rem', color: 'var(--primary)', fontWeight: '700', marginTop: '4px' }}>
+                  <div className="hero-doctor-hospitals" style={{ fontSize: '0.75rem', color: 'var(--primary)', fontWeight: '700', marginTop: '2px' }}>
                     Team Speciality Hospital Pudukkottai & Kauvery Hospital Trichy
                   </div>
                 </div>
