@@ -23,6 +23,8 @@ import {
   Send,
   Camera,
   Maximize2,
+  Star,
+  UserCheck
   Eye,
   Menu
 } from 'lucide-react';
@@ -816,6 +818,69 @@ export default function App() {
                   <div style={{ fontSize: '0.78rem', color: '#475569', marginTop: '2px' }}>{riskResult.text}</div>
                 </div>
               )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Patient Reviews & Testimonials Section */}
+      <section className="section" style={{ background: '#F1F5F9' }} id="testimonials">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-tag">Patient Satisfaction</span>
+            <h2 className="section-title">Verified Patient Feedback</h2>
+            <p className="section-subtitle">
+              Trusted by over 15,000+ patients across Pudukkottai and Trichy for compassionate & accurate GI care.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+            <div style={{ background: '#ffffff', padding: '24px', borderRadius: '16px', border: '1px solid #E2E8F0', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.05)' }}>
+              <div style={{ display: 'flex', gap: '4px', color: '#F59E0B', marginBottom: '12px' }}>
+                <Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" />
+              </div>
+              <p style={{ fontSize: '0.92rem', color: '#334155', fontStyle: 'italic', marginBottom: '16px', lineHeight: 1.6 }}>
+                "Dr. Venkatraman provided exceptional diagnosis and treatment at Team Speciality Hospital Pudukkottai. His expertise in endoscopy made the entire process painless and smooth."
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{ width: '40px', height: '40px', background: '#E6F7F5', color: '#00A99D', borderRadius: '50%', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>AP</div>
+                <div>
+                  <div style={{ fontSize: '0.9rem', fontWeight: '800', color: '#0F172A' }}>Antony Praveen</div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748B' }}>Pudukkottai • Upper GI Endoscopy</div>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ background: '#ffffff', padding: '24px', borderRadius: '16px', border: '1px solid #E2E8F0', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.05)' }}>
+              <div style={{ display: 'flex', gap: '4px', color: '#F59E0B', marginBottom: '12px' }}>
+                <Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" />
+              </div>
+              <p style={{ fontSize: '0.92rem', color: '#334155', fontStyle: 'italic', marginBottom: '16px', lineHeight: 1.6 }}>
+                "Most experienced gastroenterologist in Trichy! Detailed explanation of NAFLD fatty liver condition and highly effective medication plan at Kauvery Hospital."
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{ width: '40px', height: '40px', background: '#EBF5FF', color: '#0066CC', borderRadius: '50%', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>MS</div>
+                <div>
+                  <div style={{ fontSize: '0.9rem', fontWeight: '800', color: '#0F172A' }}>S. Meenakshi Sundaram</div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748B' }}>Trichy • Hepatology & NAFLD Care</div>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ background: '#ffffff', padding: '24px', borderRadius: '16px', border: '1px solid #E2E8F0', boxShadow: '0 10px 25px -5px rgba(0,0,0,0.05)' }}>
+              <div style={{ display: 'flex', gap: '4px', color: '#F59E0B', marginBottom: '12px' }}>
+                <Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" /><Star size={18} fill="#F59E0B" />
+              </div>
+              <p style={{ fontSize: '0.92rem', color: '#334155', fontStyle: 'italic', marginBottom: '16px', lineHeight: 1.6 }}>
+                "Quick and clear diagnosis for colonoscopy and polypectomy. Staff at Pudukkottai Team Speciality Hospital was very caring and polite."
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{ width: '40px', height: '40px', background: '#F0FDF4', color: '#16A34A', borderRadius: '50%', fontWeight: '800', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>RK</div>
+                <div>
+                  <div style={{ fontSize: '0.9rem', fontWeight: '800', color: '#0F172A' }}>R. Karthikeyan</div>
+                  <div style={{ fontSize: '0.75rem', color: '#64748B' }}>Pudukkottai • Colonoscopy & Polypectomy</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
