@@ -1009,11 +1009,11 @@ export default function App() {
 
       {/* Mobile Sticky Bar */}
       <div className="mobile-sticky-bar">
-        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '6px 8px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '8px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }}>
-          <Phone size={13} /> Call Pudukkottai
+        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 6px', fontSize: '0.7rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }}>
+          <Phone size={12} /> Call Pudukkottai
         </a>
-        <button className="btn btn-primary" style={{ flex: 1, padding: '6px 8px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '8px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
-          <Calendar size={13} /> Book Appt
+        <button className="btn btn-primary" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 6px', fontSize: '0.7rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
+          <Calendar size={12} /> Book Appt
         </button>
       </div>
 
