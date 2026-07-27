@@ -61,7 +61,7 @@ export default function App() {
     patientName: '',
     phone: '',
     email: '',
-    location: 'Kauvery Hospital, Tennur, Trichy',
+    location: 'Team Speciality Hospital, Pudukkottai',
     service: 'General OP Consultation',
     preferredDate: '',
     preferredTime: 'Morning Slot',
@@ -76,13 +76,13 @@ export default function App() {
     pudukkottai: {
       id: 'pudukkottai',
       name: 'Team Speciality Hospital',
-      city: 'Pudukkottai',
+      city: 'Pudukkottai (Main Center)',
       address: 'Opp. New Bus Stand, Pudukkottai',
       tamilName: 'டீம் ஸ்பெஷாலிட்டி ஹாஸ்பிடல், புதுக்கோட்டை',
       opHours: '11.00 AM to 5.00 PM (Mon, Wed, Sat)',
       scopyHours: '6.30 AM to 9.00 AM (Thu, Sun)',
-      phones: ['9750972222'],
-      badge: 'Senior Consultant Interventional Gastroenterologist'
+      phones: ['9092569256', '9750972222'],
+      badge: 'Main Practice Center • Senior Consultant'
     },
     trichy: {
       id: 'trichy',
@@ -93,7 +93,7 @@ export default function App() {
       opHours: '8.00 AM to 10.00 AM (Mon, Wed, Sat) | 8.00 AM to 1.00 PM (Tue, Fri)',
       scopyHours: 'Prior Appointment Basis',
       phones: ['0431-4077777', '0431-4022555'],
-      badge: 'Senior Consultant Gastroenterologist & Hepatologist'
+      badge: 'Consultant Gastroenterologist & Hepatologist'
     }
   };
 
@@ -195,44 +195,44 @@ export default function App() {
   // Procedures with Real Suite Photos
   const procedures = [
     {
-      title: 'Diagnostic Upper GI Endoscopy',
-      subtitle: 'மேல் இரைப்பை எண்டோஸ்கோபி',
-      desc: 'Precision visual evaluation of esophagus, stomach, and duodenum for acid reflux, ulcers, and bleeding.',
+      title: 'Upper GI Endoscopy',
+      subtitle: 'உணவுக்குழாய், இரைப்பை, சிறுகுடல் அகநோக்கி',
+      desc: 'Precision visual evaluation of esophagus, stomach, and duodenum for acid reflux, ulcers, and GI bleeding.',
       icon: Microscope,
       image: proc1
     },
     {
-      title: 'Colonoscopy & Polypectomy',
-      subtitle: 'குடலியல் எண்டோஸ்கோபி & பாலிப் அகற்றுதல்',
-      desc: 'Complete examination of large intestine for polyps or inflammation with safe in-procedure polyp removal.',
+      title: 'Colonoscopy',
+      subtitle: 'பெருங்குடல் அக நோக்கி',
+      desc: 'Complete endoscopic examination of large intestine for polyps, inflammation, bleeding, and lower GI disorders.',
       icon: Activity,
       image: proc2
     },
     {
-      title: 'Endoscopic Variceal Ligation (EVL)',
-      subtitle: 'ஈசோபேகஸ் நரம்பு பேண்டிங் சிகிச்சை',
-      desc: 'Emergency and therapeutic banding of bleeding esophageal varices in liver cirrhosis patients.',
-      icon: HeartPulse,
-      image: proc3
-    },
-    {
       title: 'ERCP (Biliary & Pancreatic)',
-      subtitle: 'பித்தப்பை & கணைய எண்டோஸ்கோபி',
-      desc: 'Endoscopic Retrograde Cholangiopancreatography for removing bile duct stones and relieving jaundice.',
+      subtitle: 'பித்தக் குழாய் மற்றும் கணையக் குழாய் அகநோக்கி',
+      desc: 'Endoscopic Retrograde Cholangiopancreatography for removing bile duct stones and relieving obstructive jaundice.',
       icon: Syringe,
       image: procSuite
     },
     {
-      title: 'Oesophageal & Biliary Stenting',
-      subtitle: 'ஸ்ட்ரிச்சர் & ஸ்டெண்டிங் சிகிச்சைகள்',
-      desc: 'Advanced luminal stenting for swallow difficulties, esophageal strictures, and bile duct blockages.',
+      title: 'Stricture Dilatation & Stenting',
+      subtitle: 'சுருக்கம் அகற்றல் மற்றும் விரிவிப்பான் பொருத்தம்',
+      desc: 'Advanced luminal stenting and dilatation for swallow difficulties, esophageal strictures, and bile duct blockages.',
       icon: Stethoscope,
       image: proc2
     },
     {
+      title: 'Polypectomy',
+      subtitle: 'புற்றுநோய் இல்லா கட்டி அகற்றல்',
+      desc: 'Safe in-procedure removal of gastrointestinal polyps to prevent malignant transformation.',
+      icon: HeartPulse,
+      image: proc3
+    },
+    {
       title: 'Hepatology & NAFLD Liver Care',
       subtitle: 'கல்லீரல் நோய் & கொழுப்பு கல்லீரல்',
-      desc: 'Expert care for Non-Alcoholic Fatty Liver Disease (NAFLD), hepatitis, liver fibrosis, and cirrhosis.',
+      desc: 'Comprehensive care for Non-Alcoholic Fatty Liver Disease (NAFLD), hepatitis, liver fibrosis, and cirrhosis.',
       icon: Award,
       image: drDesk2
     }
@@ -294,9 +294,9 @@ export default function App() {
         <div className="container top-bar-content">
           <div className="top-contacts">
             <span>Direct Helplines:</span>
-            <a href="tel:04314077777" className="top-contact-link">Trichy: 0431-4077777</a>
+            <a href="tel:9092569256" className="top-contact-link">Pudukkottai: 9092569256 / 9750972222</a>
             <span style={{ opacity: 0.5 }}>|</span>
-            <a href="tel:9750972222" className="top-contact-link">Pudukkottai: 9750972222</a>
+            <a href="tel:04314077777" className="top-contact-link">Trichy: 0431-4077777</a>
           </div>
         </div>
       </div>
@@ -310,7 +310,7 @@ export default function App() {
             </div>
             <div>
               <div className="brand-name">Dr. G. Venkatraman</div>
-              <div className="brand-subtitle">Kauvery Hospital (Trichy) & Team Speciality (Pudukkottai)</div>
+              <div className="brand-subtitle">Team Speciality Hospital (Pudukkottai) & Kauvery Hospital (Trichy)</div>
             </div>
           </a>
 
@@ -331,13 +331,13 @@ export default function App() {
               </button>
               {isCallMenuOpen && (
                 <div className="call-dropdown-menu">
-                  <a href="tel:04314077777" className="call-dropdown-item">
-                    <div className="call-loc">Trichy (Kauvery)</div>
-                    <div className="call-num">0431-4077777</div>
+                  <a href="tel:9092569256" className="call-dropdown-item">
+                    <div className="call-loc">Pudukkottai (Team Speciality - Main)</div>
+                    <div className="call-num">9092569256 / 9750972222</div>
                   </a>
-                  <a href="tel:9750972222" className="call-dropdown-item">
-                    <div className="call-loc">Pudukkottai (Team Spec.)</div>
-                    <div className="call-num">9750972222</div>
+                  <a href="tel:04314077777" className="call-dropdown-item">
+                    <div className="call-loc">Trichy (Kauvery Hospital)</div>
+                    <div className="call-num">0431-4077777</div>
                   </a>
                 </div>
               )}
@@ -371,14 +371,26 @@ export default function App() {
                 <HeartPulse size={16} /> Advanced Diagnostics & Therapeutics
               </div>
               
-              <h1 className="hero-title">Expert Gastroenterologist in Trichy & Pudukkottai</h1>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '28px' }}>
-                <img src={drPortrait} alt="Dr. G. Venkatraman" style={{ width: '120px', height: '120px', borderRadius: '16px', objectFit: 'cover', border: '4px solid var(--primary-light)', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
-                <div className="hero-degrees" style={{ margin: 0, fontSize: '1.25rem' }}>Led by Dr. G. Venkatraman, MD, DM</div>
+              <h1 className="hero-title">Consultant Gastroenterologist & Hepatologist</h1>
+              <div style={{ fontSize: '0.95rem', color: 'var(--secondary)', fontWeight: '700', marginBottom: '16px', lineHeight: 1.3 }}>
+                இரைப்பை, குடல், கல்லீரல் மற்றும் கணைய நோய் சிறப்பு மருத்துவர்
+              </div>
+              
+              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '24px' }}>
+                <img src={drPortrait} alt="Dr. G. Venkatraman" style={{ width: '100px', height: '100px', borderRadius: '16px', objectFit: 'cover', border: '3px solid var(--primary-light)', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
+                <div>
+                  <div className="hero-degrees" style={{ margin: 0, fontSize: '1.2rem', fontWeight: '800' }}>Dr. G. Venkatraman, MD, DM</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: '600', marginTop: '4px' }}>
+                    Consultant Gastroenterologist and Hepatologist
+                  </div>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--primary)', fontWeight: '700', marginTop: '4px' }}>
+                    Team Speciality Hospital Pudukkottai & Kauvery Hospital Trichy
+                  </div>
+                </div>
               </div>
               
               <p className="hero-subtitle">
-                Comprehensive care for digestive health, liver diseases, and advanced endoscopic procedures. Providing state-of-the-art treatments with 20+ years of clinical excellence across <strong>Trichy</strong> and <strong>Pudukkottai</strong>.
+                Comprehensive care for digestive health, liver diseases, pancreatic disorders, and advanced endoscopic procedures across <strong>Pudukkottai</strong> and <strong>Trichy</strong>.
               </p>
 
               <div className="hero-cta-group">
@@ -402,18 +414,18 @@ export default function App() {
               </div>
               
               <div className="booking-location-buttons">
-                <button className="btn btn-primary booking-btn" onClick={() => handleOpenModal('Kauvery Hospital, Tennur, Trichy')}>
+                <button className="btn btn-primary booking-btn" onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
                   <div className="btn-content">
-                    <span className="btn-loc-title">Trichy</span>
-                    <span className="btn-loc-sub">Kauvery Hospital</span>
+                    <span className="btn-loc-title">Pudukkottai (Main Center)</span>
+                    <span className="btn-loc-sub">Team Speciality Hospital</span>
                   </div>
                   <ChevronRight size={20} />
                 </button>
                 
-                <button className="btn btn-secondary-teal booking-btn" onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
+                <button className="btn btn-outline-blue booking-btn" onClick={() => handleOpenModal('Kauvery Hospital, Tennur, Trichy')}>
                   <div className="btn-content">
-                    <span className="btn-loc-title">Pudukkottai</span>
-                    <span className="btn-loc-sub">Team Speciality Hospital</span>
+                    <span className="btn-loc-title">Trichy</span>
+                    <span className="btn-loc-sub">Kauvery Hospital</span>
                   </div>
                   <ChevronRight size={20} />
                 </button>
@@ -450,20 +462,77 @@ export default function App() {
             <button className={`tab-btn ${activeLocationTab === 'all' ? 'active' : ''}`} onClick={() => setActiveLocationTab('all')}>
               All Practice Centers
             </button>
-            <button className={`tab-btn ${activeLocationTab === 'trichy' ? 'active' : ''}`} onClick={() => setActiveLocationTab('trichy')}>
-              Trichy (Kauvery)
+          <div className="location-tabs">
+            <button className={`tab-btn ${activeLocationTab === 'all' ? 'active' : ''}`} onClick={() => setActiveLocationTab('all')}>
+              All Practice Centers
             </button>
             <button className={`tab-btn ${activeLocationTab === 'pudukkottai' ? 'active' : ''}`} onClick={() => setActiveLocationTab('pudukkottai')}>
-              Pudukkottai (Team Speciality)
+              Pudukkottai (Team Speciality - Main)
+            </button>
+            <button className={`tab-btn ${activeLocationTab === 'trichy' ? 'active' : ''}`} onClick={() => setActiveLocationTab('trichy')}>
+              Trichy (Kauvery Hospital)
             </button>
           </div>
 
           <div className="location-cards-grid">
+            {/* Team Speciality Hospital Pudukkottai - MAIN CENTER */}
+            {(activeLocationTab === 'all' || activeLocationTab === 'pudukkottai') && (
+              <div className="location-card">
+                <div className="location-card-header secondary-header">
+                  <span className="location-badge">Location 1 • Main Practice Center</span>
+                  <h3 className="hospital-name">{locations.pudukkottai.name}</h3>
+                  <div className="hospital-address">
+                    <MapPin size={16} /> {locations.pudukkottai.address}
+                  </div>
+                </div>
+
+                <div className="location-card-body">
+                  <div style={{ fontSize: '0.85rem', color: '#00A99D', fontWeight: '700' }}>
+                    {locations.pudukkottai.tamilName}
+                  </div>
+
+                  <div className="timing-block">
+                    <div className="timing-header">
+                      <Clock size={18} color="#00A99D" /> OP Consultation Hours
+                    </div>
+                    <div className="timing-details">
+                      <strong>Mon, Wed, Sat:</strong> 11.00 AM to 5.00 PM
+                    </div>
+                  </div>
+
+                  <div className="timing-block scopy-block">
+                    <div className="timing-header">
+                      <Activity size={18} color="#00A99D" /> Scopy & Procedure Timings
+                    </div>
+                    <div className="timing-details">
+                      <strong>Thursday & Sunday:</strong> 6.30 AM to 9.00 AM
+                    </div>
+                  </div>
+
+                  <div className="phone-action-box">
+                    <div style={{ fontSize: '0.85rem', fontWeight: '700', color: '#1F2937' }}>Appointment Helpdesk Numbers:</div>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                      <a href="tel:9092569256" className="phone-btn" style={{ background: '#E6F7F5', color: '#00A99D' }}>
+                        <Phone size={14} /> 9092569256
+                      </a>
+                      <a href="tel:9750972222" className="phone-btn" style={{ background: '#E6F7F5', color: '#00A99D' }}>
+                        <Phone size={14} /> 9750972222
+                      </a>
+                    </div>
+                  </div>
+
+                  <button className="btn btn-secondary-teal" style={{ width: '100%', marginTop: 'auto' }} onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
+                    Book at Team Speciality Hospital
+                  </button>
+                </div>
+              </div>
+            )}
+
             {/* Kauvery Hospital Trichy */}
             {(activeLocationTab === 'all' || activeLocationTab === 'trichy') && (
               <div className="location-card">
                 <div className="location-card-header primary-header">
-                  <span className="location-badge">Location 1 • Trichy</span>
+                  <span className="location-badge">Location 2 • Trichy</span>
                   <h3 className="hospital-name">{locations.trichy.name}</h3>
                   <div className="hospital-address">
                     <MapPin size={16} /> {locations.trichy.address}
@@ -499,54 +568,6 @@ export default function App() {
 
                   <button className="btn btn-primary" style={{ width: '100%', marginTop: 'auto' }} onClick={() => handleOpenModal('Kauvery Hospital, Tennur, Trichy')}>
                     Book at Kauvery Hospital
-                  </button>
-                </div>
-              </div>
-            )}
-
-            {/* Team Speciality Hospital Pudukkottai */}
-            {(activeLocationTab === 'all' || activeLocationTab === 'pudukkottai') && (
-              <div className="location-card">
-                <div className="location-card-header secondary-header">
-                  <span className="location-badge">Location 2 • Pudukkottai</span>
-                  <h3 className="hospital-name">{locations.pudukkottai.name}</h3>
-                  <div className="hospital-address">
-                    <MapPin size={16} /> {locations.pudukkottai.address}
-                  </div>
-                </div>
-
-                <div className="location-card-body">
-                  <div style={{ fontSize: '0.85rem', color: '#00A99D', fontWeight: '700' }}>
-                    {locations.pudukkottai.tamilName}
-                  </div>
-
-                  <div className="timing-block">
-                    <div className="timing-header">
-                      <Clock size={18} color="#00A99D" /> OP Consultation Hours
-                    </div>
-                    <div className="timing-details">
-                      <strong>Mon, Wed, Sat:</strong> 11.00 AM to 5.00 PM
-                    </div>
-                  </div>
-
-                  <div className="timing-block scopy-block">
-                    <div className="timing-header">
-                      <Activity size={18} color="#00A99D" /> Scopy & Procedure Timings
-                    </div>
-                    <div className="timing-details">
-                      <strong>Thursday & Sunday:</strong> 6.30 AM to 9.00 AM
-                    </div>
-                  </div>
-
-                  <div className="phone-action-box">
-                    <div style={{ fontSize: '0.85rem', fontWeight: '700', color: '#1F2937' }}>Direct Phone Appointment:</div>
-                    <a href="tel:9750972222" className="phone-btn" style={{ background: '#E6F7F5', color: '#00A99D' }}>
-                      <Phone size={16} /> Call 9750972222
-                    </a>
-                  </div>
-
-                  <button className="btn btn-secondary-teal" style={{ width: '100%', marginTop: 'auto' }} onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
-                    Book at Pudukkottai
                   </button>
                 </div>
               </div>
@@ -1031,10 +1052,10 @@ export default function App() {
             <div>
               <h4 style={{ color: '#ffffff', fontSize: '0.95rem', fontWeight: '700', marginBottom: '14px' }}>Procedures</h4>
               <ul className="footer-link-list">
-                <li><a href="#procedures" className="footer-link">Upper GI Endoscopy</a></li>
-                <li><a href="#procedures" className="footer-link">Colonoscopy & Polypectomy</a></li>
-                <li><a href="#procedures" className="footer-link">ERCP & Biliary Stenting</a></li>
-                <li><a href="#research" className="footer-link">NAFLD & Fatty Liver Care</a></li>
+                <li><a href="#procedures" className="footer-link">Upper GI Endoscopy (குடல் பரிசோதனை)</a></li>
+                <li><a href="#procedures" className="footer-link">Colonoscopy & Polypectomy (பெருங்குடல் பரிசோதனை)</a></li>
+                <li><a href="#procedures" className="footer-link">ERCP & Biliary Stenting (பித்தநாள சிகிச்சை)</a></li>
+                <li><a href="#research" className="footer-link">NAFLD & Fatty Liver Care (கல்லீரல் சிகிச்சை)</a></li>
               </ul>
             </div>
           </div>
@@ -1064,8 +1085,8 @@ export default function App() {
           borderTop: '1px solid #e2e8f0'
         }}
       >
-        <a href="tel:04314077777" className="btn btn-outline-blue" style={{ flex: 1, padding: '10px 8px', fontSize: '0.85rem', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }}>
-          <Phone size={16} /> Call Trichy
+        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '10px 8px', fontSize: '0.85rem', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }}>
+          <Phone size={16} /> Call Pudukkottai
         </a>
         <button className="btn btn-primary" style={{ flex: 1, padding: '10px 8px', fontSize: '0.85rem', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }} onClick={() => setIsModalOpen(true)}>
           <Calendar size={16} /> Book Appt
