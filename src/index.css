@@ -1639,25 +1639,32 @@ body {
   }
 }
 
-/* Mobile Floating Sticky CTA Pill Bar */
-.mobile-sticky-bar {
+/* Mobile Floating Sticky CTA Pill Bar Wrapper */
+.mobile-sticky-wrapper {
   position: fixed;
   bottom: 12px;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 999999 !important;
+  pointer-events: none;
+}
+
+.mobile-sticky-bar {
   width: 90%;
   max-width: 340px;
   background: #ffffff;
   padding: 5px 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  z-index: 999999 !important;
   border-radius: 9999px;
   border: 1px solid var(--border-color);
   display: flex !important;
   justify-content: space-between;
   gap: 8px;
+  pointer-events: auto;
 }
 
 .mobile-sticky-bar .btn {
@@ -1669,6 +1676,7 @@ body {
 }
 
 @media (min-width: 769px) {
+  .mobile-sticky-wrapper,
   .mobile-sticky-bar {
     display: none !important;
   }

@@ -1062,35 +1062,45 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Mobile Floating Sticky Pill Bar */}
+      {/* Mobile Floating Sticky Pill Bar Wrapper */}
       <div 
-        className="mobile-sticky-bar"
+        className="mobile-sticky-wrapper"
         style={{
           position: 'fixed',
           bottom: '12px',
           left: 0,
           right: 0,
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          width: '90%',
-          maxWidth: '340px',
-          backgroundColor: '#ffffff',
-          padding: '5px 8px',
-          boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
-          zIndex: 999999,
+          width: '100%',
           display: 'flex',
-          justifyContent: 'space-between',
-          gap: '8px',
-          borderRadius: '9999px',
-          border: '1px solid #e2e8f0'
+          justifyContent: 'center',
+          alignItems: 'center',
+          zIndex: 999999,
+          pointerEvents: 'none'
         }}
       >
-        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }}>
-          <Phone size={13} /> Call Pudukkottai
-        </a>
-        <button className="btn btn-primary" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => setIsModalOpen(true)}>
-          <Calendar size={13} /> Book Appt
-        </button>
+        <div 
+          className="mobile-sticky-bar"
+          style={{
+            width: '90%',
+            maxWidth: '340px',
+            backgroundColor: '#ffffff',
+            padding: '5px 8px',
+            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
+            display: 'flex',
+            justifyContent: 'space-between',
+            gap: '8px',
+            borderRadius: '9999px',
+            border: '1px solid #e2e8f0',
+            pointerEvents: 'auto'
+          }}
+        >
+          <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }}>
+            <Phone size={13} /> Call Pudukkottai
+          </a>
+          <button className="btn btn-primary" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => setIsModalOpen(true)}>
+            <Calendar size={13} /> Book Appt
+          </button>
+        </div>
       </div>
     </div>
   );
