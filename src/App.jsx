@@ -1061,43 +1061,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* Mobile Single Floating CTA Button */}
-      <div 
-        className="mobile-sticky-wrapper"
-        style={{
-          position: 'fixed',
-          bottom: '16px',
-          left: 0,
-          right: 0,
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          zIndex: 999999,
-          pointerEvents: 'none'
-        }}
-      >
-        <button 
-          className="btn btn-primary mobile-floating-single-btn"
-          style={{
-            padding: '10px 22px',
-            fontSize: '0.85rem',
-            fontWeight: '800',
-            borderRadius: '9999px',
-            boxShadow: '0 10px 25px rgba(22, 163, 74, 0.45)',
-            border: '2px solid #ffffff',
-            pointerEvents: 'auto',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            whiteSpace: 'nowrap'
-          }}
-          onClick={() => setIsModalOpen(true)}
-        >
-          <Calendar size={16} /> Book Appointment / Call
-        </button>
-      </div>
     </div>
   );
 }

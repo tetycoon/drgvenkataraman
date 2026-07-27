@@ -1639,35 +1639,6 @@ body {
   }
 }
 
-/* Mobile Single Floating CTA Button Wrapper */
-.mobile-sticky-wrapper {
-  position: fixed;
-  bottom: 16px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  z-index: 999999 !important;
-  pointer-events: none;
-}
 
-.mobile-floating-single-btn {
-  pointer-events: auto;
-  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.45);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.mobile-floating-single-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.55);
-}
-
-@media (min-width: 769px) {
-  .mobile-sticky-wrapper {
-    display: none !important;
-  }
-}
 
 
