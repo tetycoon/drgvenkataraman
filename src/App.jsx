@@ -24,7 +24,7 @@ import {
   Camera,
   Maximize2,
   Star,
-  UserCheck
+  UserCheck,
   Eye,
   Menu
 } from 'lucide-react';
