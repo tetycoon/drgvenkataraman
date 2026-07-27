@@ -1068,8 +1068,10 @@ export default function App() {
         style={{
           position: 'fixed',
           bottom: '12px',
-          left: '50%',
-          transform: 'translateX(-50%)',
+          left: 0,
+          right: 0,
+          marginLeft: 'auto',
+          marginRight: 'auto',
           width: '90%',
           maxWidth: '340px',
           backgroundColor: '#ffffff',

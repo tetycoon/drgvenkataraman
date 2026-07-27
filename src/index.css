@@ -1643,8 +1643,10 @@ body {
 .mobile-sticky-bar {
   position: fixed;
   bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
   max-width: 340px;
   background: #ffffff;
