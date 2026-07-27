@@ -1639,6 +1639,32 @@ body {
   }
 }
 
+/* Mobile Sticky Bottom CTA Bar - Ultra Compact */
+.mobile-sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 46px;
+  background: #ffffff;
+  padding: 4px 10px;
+  box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.12);
+  z-index: 999999 !important;
+  border-top: 1px solid var(--border-color);
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .mobile-sticky-bar {
+    display: none !important;
+  }
+}
+
 
 
 
