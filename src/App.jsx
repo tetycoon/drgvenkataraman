@@ -1061,6 +1061,16 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Mobile Sticky Bottom CTA Bar */}
+      <div className="mobile-bottom-sticky-bar">
+        <a href="tel:9092569256" className="mobile-bottom-btn mobile-call-btn">
+          <Phone size={14} /> Call Pudukkottai
+        </a>
+        <button className="mobile-bottom-btn mobile-book-btn" onClick={() => setIsModalOpen(true)}>
+          <Calendar size={14} /> Book Appointment
+        </button>
+      </div>
     </div>
   );
 }
