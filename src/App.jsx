@@ -1081,23 +1081,25 @@ export default function App() {
         <div 
           className="mobile-sticky-bar"
           style={{
-            width: '90%',
-            maxWidth: '340px',
+            width: '86%',
+            maxWidth: '310px',
             backgroundColor: '#ffffff',
-            padding: '5px 8px',
-            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
+            padding: '5px 6px',
+            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.22)',
             display: 'flex',
             justifyContent: 'space-between',
-            gap: '8px',
+            alignItems: 'center',
+            gap: '6px',
             borderRadius: '9999px',
-            border: '1px solid #e2e8f0',
-            pointerEvents: 'auto'
+            border: '1px solid #cbd5e1',
+            pointerEvents: 'auto',
+            margin: '0 auto'
           }}
         >
-          <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }}>
-            <Phone size={13} /> Call Pudukkottai
+          <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '7px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap', textAlign: 'center' }}>
+            <Phone size={13} /> Call Us
           </a>
-          <button className="btn btn-primary" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => setIsModalOpen(true)}>
+          <button className="btn btn-primary" style={{ flex: 1, padding: '7px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap', textAlign: 'center' }} onClick={() => setIsModalOpen(true)}>
             <Calendar size={13} /> Book Appt
           </button>
         </div>

@@ -1654,25 +1654,29 @@ body {
 }
 
 .mobile-sticky-bar {
-  width: 90%;
-  max-width: 340px;
+  width: 86%;
+  max-width: 310px;
+  margin: 0 auto;
   background: #ffffff;
-  padding: 5px 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 5px 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
   border-radius: 9999px;
   border: 1px solid var(--border-color);
   display: flex !important;
   justify-content: space-between;
-  gap: 8px;
+  align-items: center;
+  gap: 6px;
   pointer-events: auto;
 }
 
 .mobile-sticky-bar .btn {
   flex: 1;
-  font-size: 0.72rem;
-  padding: 6px 10px;
+  font-size: 0.75rem;
+  padding: 7px 8px;
   border-radius: 9999px;
   white-space: nowrap;
+  text-align: center;
+  justify-content: center;
 }
 
 @media (min-width: 769px) {
