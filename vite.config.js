@@ -5,6 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    cssTarget: 'chrome80'
+    cssTarget: 'chrome80',
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name]-v22-[hash].js`,
+        chunkFileNames: `assets/[name]-v22-[hash].js`,
+        assetFileNames: `assets/[name]-v22-[hash].[ext]`
+      }
+    }
   }
 })
