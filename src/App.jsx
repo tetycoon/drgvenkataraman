@@ -1062,30 +1062,32 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Mobile Sticky Bar */}
+      {/* Mobile Floating Sticky Pill Bar */}
       <div 
         className="mobile-sticky-bar"
         style={{
           position: 'fixed',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          width: '100%',
+          bottom: '12px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '90%',
+          maxWidth: '340px',
           backgroundColor: '#ffffff',
-          padding: '6px 12px',
-          boxShadow: '0 -4px 16px rgba(0, 0, 0, 0.15)',
+          padding: '5px 8px',
+          boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
           zIndex: 999999,
           display: 'flex',
           justifyContent: 'space-between',
           gap: '8px',
-          borderTop: '1px solid #e2e8f0'
+          borderRadius: '9999px',
+          border: '1px solid #e2e8f0'
         }}
       >
-        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '6px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '8px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }}>
-          <Phone size={14} /> Call Pudukkottai
+        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }}>
+          <Phone size={13} /> Call Pudukkottai
         </a>
-        <button className="btn btn-primary" style={{ flex: 1, padding: '6px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '8px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }} onClick={() => setIsModalOpen(true)}>
-          <Calendar size={14} /> Book Appt
+        <button className="btn btn-primary" style={{ flex: 1, padding: '6px 10px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => setIsModalOpen(true)}>
+          <Calendar size={13} /> Book Appt
         </button>
       </div>
     </div>
