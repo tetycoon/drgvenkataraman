@@ -1647,19 +1647,20 @@ body {
   right: 0;
   width: 100%;
   background: #ffffff;
-  padding: 10px 16px;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  padding: 6px 12px;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
   z-index: 999999 !important;
   border-top: 1px solid var(--border-color);
   display: flex !important;
   justify-content: space-between;
-  gap: 12px;
+  gap: 8px;
 }
 
 .mobile-sticky-bar .btn {
   flex: 1;
-  font-size: 0.9rem;
-  padding: 12px 8px;
+  font-size: 0.75rem;
+  padding: 6px 8px;
+  border-radius: 8px;
 }
 
 @media (min-width: 769px) {

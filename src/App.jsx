@@ -1072,20 +1072,20 @@ export default function App() {
           right: 0,
           width: '100%',
           backgroundColor: '#ffffff',
-          padding: '12px 16px',
-          boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.25)',
+          padding: '6px 12px',
+          boxShadow: '0 -4px 16px rgba(0, 0, 0, 0.15)',
           zIndex: 999999,
           display: 'flex',
           justifyContent: 'space-between',
-          gap: '12px',
+          gap: '8px',
           borderTop: '1px solid #e2e8f0'
         }}
       >
-        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '10px 8px', fontSize: '0.85rem', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }}>
-          <Phone size={16} /> Call Pudukkottai
+        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '6px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '8px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }}>
+          <Phone size={14} /> Call Pudukkottai
         </a>
-        <button className="btn btn-primary" style={{ flex: 1, padding: '10px 8px', fontSize: '0.85rem', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }} onClick={() => setIsModalOpen(true)}>
-          <Calendar size={16} /> Book Appt
+        <button className="btn btn-primary" style={{ flex: 1, padding: '6px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '8px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex' }} onClick={() => setIsModalOpen(true)}>
+          <Calendar size={14} /> Book Appt
         </button>
       </div>
     </div>
