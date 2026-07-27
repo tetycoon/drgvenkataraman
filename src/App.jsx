@@ -462,10 +462,6 @@ export default function App() {
             <button className={`tab-btn ${activeLocationTab === 'all' ? 'active' : ''}`} onClick={() => setActiveLocationTab('all')}>
               All Practice Centers
             </button>
-          <div className="location-tabs">
-            <button className={`tab-btn ${activeLocationTab === 'all' ? 'active' : ''}`} onClick={() => setActiveLocationTab('all')}>
-              All Practice Centers
-            </button>
             <button className={`tab-btn ${activeLocationTab === 'pudukkottai' ? 'active' : ''}`} onClick={() => setActiveLocationTab('pudukkottai')}>
               Pudukkottai (Team Speciality - Main)
             </button>
