@@ -1639,10 +1639,10 @@ body {
   }
 }
 
-/* Mobile Floating Sticky CTA Pill Bar Wrapper */
+/* Mobile Single Floating CTA Button Wrapper */
 .mobile-sticky-wrapper {
   position: fixed;
-  bottom: 12px;
+  bottom: 16px;
   left: 0;
   right: 0;
   width: 100%;
@@ -1653,35 +1653,19 @@ body {
   pointer-events: none;
 }
 
-.mobile-sticky-bar {
-  width: 86%;
-  max-width: 310px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 5px 6px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
-  border-radius: 9999px;
-  border: 1px solid var(--border-color);
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6px;
+.mobile-floating-single-btn {
   pointer-events: auto;
+  box-shadow: 0 10px 25px rgba(22, 163, 74, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mobile-sticky-bar .btn {
-  flex: 1;
-  font-size: 0.75rem;
-  padding: 7px 8px;
-  border-radius: 9999px;
-  white-space: nowrap;
-  text-align: center;
-  justify-content: center;
+.mobile-floating-single-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.55);
 }
 
 @media (min-width: 769px) {
-  .mobile-sticky-wrapper,
-  .mobile-sticky-bar {
+  .mobile-sticky-wrapper {
     display: none !important;
   }
 }

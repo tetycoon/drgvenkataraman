@@ -1062,12 +1062,12 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Mobile Floating Sticky Pill Bar Wrapper */}
+      {/* Mobile Single Floating CTA Button */}
       <div 
         className="mobile-sticky-wrapper"
         style={{
           position: 'fixed',
-          bottom: '12px',
+          bottom: '16px',
           left: 0,
           right: 0,
           width: '100%',
@@ -1078,31 +1078,25 @@ export default function App() {
           pointerEvents: 'none'
         }}
       >
-        <div 
-          className="mobile-sticky-bar"
+        <button 
+          className="btn btn-primary mobile-floating-single-btn"
           style={{
-            width: '86%',
-            maxWidth: '310px',
-            backgroundColor: '#ffffff',
-            padding: '5px 6px',
-            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.22)',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            gap: '6px',
+            padding: '10px 22px',
+            fontSize: '0.85rem',
+            fontWeight: '800',
             borderRadius: '9999px',
-            border: '1px solid #cbd5e1',
+            boxShadow: '0 10px 25px rgba(22, 163, 74, 0.45)',
+            border: '2px solid #ffffff',
             pointerEvents: 'auto',
-            margin: '0 auto'
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            whiteSpace: 'nowrap'
           }}
+          onClick={() => setIsModalOpen(true)}
         >
-          <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: 1, padding: '7px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap', textAlign: 'center' }}>
-            <Phone size={13} /> Call Us
-          </a>
-          <button className="btn btn-primary" style={{ flex: 1, padding: '7px 8px', fontSize: '0.75rem', fontWeight: '700', borderRadius: '9999px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap', textAlign: 'center' }} onClick={() => setIsModalOpen(true)}>
-            <Calendar size={13} /> Book Appt
-          </button>
-        </div>
+          <Calendar size={16} /> Book Appointment / Call
+        </button>
       </div>
     </div>
   );
