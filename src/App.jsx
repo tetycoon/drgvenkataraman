@@ -41,6 +41,7 @@ export default function App() {
   const [activeLocationTab, setActiveLocationTab] = useState('all');
   const [selectedDay, setSelectedDay] = useState('Monday');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isCallModalOpen, setIsCallModalOpen] = useState(false);
   const [isCallMenuOpen, setIsCallMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
@@ -1072,11 +1073,64 @@ export default function App() {
         </div>
       )}
 
+      {/* Direct Call Hospital Selection Modal */}
+      {isCallModalOpen && (
+        <div className="modal-overlay" onClick={() => setIsCallModalOpen(false)}>
+          <div className="modal-content-box" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '420px' }}>
+            <div className="modal-header" style={{ background: '#0F172A', color: '#ffffff' }}>
+              <div>
+                <h3 className="modal-title" style={{ color: '#ffffff', fontSize: '1.2rem' }}>📞 Direct Phone Call</h3>
+                <div style={{ fontSize: '0.78rem', opacity: 0.85 }}>Select Hospital to Call Directly</div>
+              </div>
+              <button className="close-modal-btn" style={{ color: '#ffffff' }} onClick={() => setIsCallModalOpen(false)}>
+                <X size={20} />
+              </button>
+            </div>
+
+            <div className="modal-body" style={{ padding: '20px' }}>
+              <div style={{ marginBottom: '16px', background: '#F0FDF4', border: '1px solid #BBF7D0', padding: '14px', borderRadius: '12px' }}>
+                <div style={{ fontWeight: '800', color: '#166534', fontSize: '0.92rem', marginBottom: '2px' }}>
+                  📍 1. Team Speciality Hospital (Pudukkottai)
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#15803D', marginBottom: '10px' }}>
+                  Opp. New Bus Stand, Pudukkottai • Main Practice Center
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                  <a href="tel:9092569256" className="btn btn-primary" style={{ fontSize: '0.8rem', padding: '8px', justifyContent: 'center' }}>
+                    <Phone size={14} /> 9092569256
+                  </a>
+                  <a href="tel:9750972222" className="btn btn-primary" style={{ fontSize: '0.8rem', padding: '8px', justifyContent: 'center' }}>
+                    <Phone size={14} /> 9750972222
+                  </a>
+                </div>
+              </div>
+
+              <div style={{ background: '#EBF5FF', border: '1px solid #BFDBFE', padding: '14px', borderRadius: '12px' }}>
+                <div style={{ fontWeight: '800', color: '#1E40AF', fontSize: '0.92rem', marginBottom: '2px' }}>
+                  📍 2. Kauvery Hospital (Tennur, Trichy)
+                </div>
+                <div style={{ fontSize: '0.75rem', color: '#1D4ED8', marginBottom: '10px' }}>
+                  Tennur, Tiruchirappalli
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                  <a href="tel:04314077777" className="btn btn-outline-blue" style={{ fontSize: '0.8rem', padding: '8px', justifyContent: 'center', background: '#ffffff' }}>
+                    <Phone size={14} /> 0431-4077777
+                  </a>
+                  <a href="tel:04314022555" className="btn btn-outline-blue" style={{ fontSize: '0.8rem', padding: '8px', justifyContent: 'center', background: '#ffffff' }}>
+                    <Phone size={14} /> 0431-4022555
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Mobile Sticky Bar */}
       <div className="mobile-sticky-bar">
-        <a href="tel:9092569256" className="btn btn-outline-blue" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 6px', fontSize: '0.7rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }}>
-          <Phone size={12} /> Call Pudukkottai
-        </a>
+        <button className="btn btn-outline-blue" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 6px', fontSize: '0.7rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => setIsCallModalOpen(true)}>
+          <Phone size={12} /> Direct Call
+        </button>
         <button className="btn btn-primary" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 6px', fontSize: '0.7rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
           <Calendar size={12} /> Book Appt
         </button>
