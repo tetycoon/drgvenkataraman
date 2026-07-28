@@ -8,9 +8,9 @@ export default defineConfig({
     cssTarget: 'chrome80',
     rollupOptions: {
       output: {
-        entryFileNames: `assets/[name]-v29-[hash].js`,
-        chunkFileNames: `assets/[name]-v29-[hash].js`,
-        assetFileNames: `assets/[name]-v29-[hash].[ext]`
+        entryFileNames: `assets/[name]-v30-[hash].js`,
+        chunkFileNames: `assets/[name]-v30-[hash].js`,
+        assetFileNames: `assets/[name]-v30-[hash].[ext]`
       }
     }
   }
