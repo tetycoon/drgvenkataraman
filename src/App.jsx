@@ -1127,11 +1127,11 @@ export default function App() {
       )}
 
       {/* Mobile Sticky Bar */}
-      <div className="mobile-sticky-bar">
-        <button className="btn btn-outline-blue" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 6px', fontSize: '0.7rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => setIsCallModalOpen(true)}>
+      <div className="mobile-sticky-bar" style={{ gap: '2px', padding: '3px 4px' }}>
+        <button className="btn btn-outline-blue" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 4px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => setIsCallModalOpen(true)}>
           <Phone size={12} /> Direct Call
         </button>
-        <button className="btn btn-primary" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 6px', fontSize: '0.7rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
+        <button className="btn btn-primary" style={{ flex: '1 1 50%', minWidth: 0, padding: '4px 4px', fontSize: '0.72rem', fontWeight: '700', borderRadius: '6px', justifyContent: 'center', alignItems: 'center', display: 'inline-flex', whiteSpace: 'nowrap' }} onClick={() => handleOpenModal('Team Speciality Hospital, Pudukkottai')}>
           <Calendar size={12} /> Book Appt
         </button>
       </div>
